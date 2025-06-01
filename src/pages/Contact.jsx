@@ -34,12 +34,13 @@ const Contact = () => {
     
     try {
       const response = await axios.post(
-      "https://threed-portfolio-backend-e1q8.onrender.com/contact",
+      "https://threed-portfolio-backend-e1q8.onrender.com/api/contact",
       formData,
       {
         headers: {
           'Content-Type': 'application/json'
-        }
+        },
+        timeout: 10000
       }
     );
 

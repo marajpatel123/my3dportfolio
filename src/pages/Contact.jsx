@@ -34,7 +34,7 @@ const Contact = () => {
     
     try {
       const response = await axios.post(
-      "https://threed-portfolio-backend-de0c.onrender.com//contact",
+      "https://threed-portfolio-backend-de0c.onrender.com/contact",
       formData,
       {
         headers: {

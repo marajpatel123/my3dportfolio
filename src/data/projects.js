@@ -15,5 +15,13 @@ export const projects = [
     demoUrl: "#",
     codeUrl: "#"
   },
+  {
+    title: "Real-time Chat Application",
+    description: "A real-time chat application with WebSocket support and user authentication using JWT tokens and MongoDB for data storage. Includes features like message history, user profiles, and online status indicators.",
+    image: "/path-to-image.jpg",
+    tags: ["Socket.io", "Expressjs", "Vite.js", "Node.js", "MongoDB"],
+    demoUrl: "#",
+    codeUrl: "#"
+  },
   // Add more projects as needed
 ]

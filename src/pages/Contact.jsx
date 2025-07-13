@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import { FiSend, FiCheckCircle, FiAlertCircle } from 'react-icons/fi';
+import {
+  FiSend,
+  FiCheckCircle,
+  FiAlertCircle,
+  FiTwitter,
+  FiFacebook,
+  FiInstagram,
+  FiLinkedin,
+  FiGithub,
+} from "react-icons/fi";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -186,6 +195,53 @@ const Contact = () => {
             )}
           </div>
         </form>
+        <div className="mt-16 pt-8 border-t border-gray-700">
+          <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+            Connect With Us
+          </h2>
+          <div className="flex space-x-6">
+            <a
+              href="https://x.com/rajp739407"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
+            >
+              <FiTwitter className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100040780848198"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-600 transition-colors"
+            >
+              <FiFacebook className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/raj_patel6331"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-pink-500 transition-colors"
+            >
+              <FiInstagram className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/raj-patel-a35480259/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-500 transition-colors"
+            >
+              <FiLinkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="https://github.com/marajpatel123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-gray-100 transition-colors"
+            >
+              <FiGithub className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
